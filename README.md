@@ -84,9 +84,6 @@ This extension requires the following permissions:
 - Restart your browser
 - Reinstall the extension
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Contributing
 
@@ -94,6 +91,4 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 
 ## Credits
 
-- Icon: Simplified link icon for easy recognition
 - Created by Sharky999
-- Built for the YOURLS community 
