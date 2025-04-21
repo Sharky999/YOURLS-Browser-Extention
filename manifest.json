@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "YOURLS URL Shortener",
+  "version": "1.0",
+  "description": "Shorten URLs on any webpage using your YOURLS instance",
+  "permissions": ["storage", "clipboardWrite", "activeTab", "contextMenus", "notifications", "clipboardRead"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/link_icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/link_icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icons/link_icon.png",
+    "48": "icons/link_icon.png",
+    "128": "icons/link_icon.png"
+  }
+}
